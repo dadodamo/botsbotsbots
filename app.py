@@ -1,5 +1,6 @@
 # source env/bin/activate
 # virtualenv env
+#letsgo
 
 from flask import Flask, render_template, url_for
 
