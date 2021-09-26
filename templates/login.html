@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/login.css') }}">
     <title>Login Page</title>
 </head>
 <body>
-<p>Login Page</p>
+<div id="login">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active">Sign In</h2>
+          <h2 class="inactive underlineHover">Register</h2>
+      
+          <!-- Login Form -->
+          <form method="POST" action='/login'>
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+      
+        </div>
+      </div>
+</div>
 </body>
 </html>
